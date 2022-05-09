@@ -8,12 +8,10 @@ library(seasonal)
 library(plotly)
 library(zoo)
 library(shinythemes)
-library(rsconnect)
 
 #Simple Models: (1) Naive, (2) Seasonal Naive, (3) Mean, & (4) Drift
 #Exponential smoothing: (1) Holts & (2) Holts/Winters
 #ARIMA: (1) Manually selected parameters & (2) Auto selected parameters
-
 
 mytimeseries <- aus_arrivals
 
@@ -253,3 +251,4 @@ server <- function(input, output){
 }
 
 shinyApp(ui = ui, server = server)
+
